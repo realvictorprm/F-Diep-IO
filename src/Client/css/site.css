@@ -24,6 +24,7 @@ nav.navbar{
 
 .middle {
     vertical-align:middle;
+    border-style:line;
 }
 
 .breadcrumb,.navbar-nav {
@@ -48,14 +49,14 @@ h1,.blue_h1 {
 }
 
 div.tile {
-    background-color:#ededed;
+    background-color:#FF0000;
     margin-bottom:15px;
     min-height:120px;
     position:relative;
     font-size:48px;
     text-align:center;
-    color:gray;
-    padding:15px;
+    color:#FF0000;
+    padding:0px;
 }
 
 div.tile.active {
@@ -79,7 +80,7 @@ div.signInBox{
     padding: 20px;
     margin: 80px auto;
     box-shadow: 0 0 2px rgba(0,0,0, 0.4);
-    background:#FFF;
+    background:#FF0000;
 }
 
 div.signInBox div.input-group{
@@ -104,10 +105,11 @@ input[type=checkbox] {
 }
 
 body {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
     min-width:320px;
-    font-size:14px;
+    font-size:16px;
+    border: 2px, solid, #000;
 }
 
 .navbar {

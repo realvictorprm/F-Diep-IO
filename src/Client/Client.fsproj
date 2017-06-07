@@ -4,12 +4,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="../Server/Shared/Domain.fs" />
-    <Compile Include="Messages.fs" />
-    <Compile Include="Style.fs" />
     <Compile Include="Utils.fs" />
-    <Compile Include="pages/Menu.fs" />
-    <Compile Include="pages/WishList.fs" />
-    <Compile Include="pages/Login.fs" />
+    <Compile Include="Logic.fs" />
     <Compile Include="App.fs" />
     <PackageReference Include="FSharp.NET.Sdk" Version="1.0.*" PrivateAssets="All" />
     <DotNetCliToolReference Include="dotnet-fable" Version="1.0.4" />

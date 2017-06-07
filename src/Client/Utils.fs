@@ -1,13 +1,14 @@
-module Client.Utils
+namespace Game
+open Fable.Import.Browser
 
-open Fable.Import
+module Logger =
+    let mutable counter = 0
+    let logf msg =  Printf.kprintf (fun s -> window.console.log s; s) msg
 
-let load<'T> key =
-    Browser.localStorage.getItem(key) |> unbox
-    |> Option.map (JS.JSON.parse >> unbox<'T>)
+    let log s = 
+        window.console.log s
+        counter <- counter + 1
 
-let save key (data: 'T) =
-    Browser.localStorage.setItem(key, JS.JSON.stringify data)
 
-let delete key =
-    Browser.localStorage.removeItem(key)
+
+
